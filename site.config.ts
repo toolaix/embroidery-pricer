@@ -1,44 +1,35 @@
 /**
- * 每个小工具只改这一份配置。
- * 主词 / 定价 / 收款 / 分析 — 大陆出海默认 Creem + Cloudflare。
+ * Embroidery / DTF pricing — one-keyword SEO tool under toolaix.
  */
 export const site = {
-  /** 对外品牌名，如 "Etsy Fee Lab" */
-  name: "Tool Starter",
-  /** 主关键词，一词一页的核心 */
-  primaryKeyword: "example fee calculator",
-  /** 一句话价值 */
-  tagline: "Know your real cost in under 60 seconds.",
-  /** 生产域名，上线前改掉 */
-  domain: "example.toolaix.com",
+  name: "StitchQuote",
+  primaryKeyword: "embroidery pricing calculator",
+  tagline: "Price embroidery and DTF jobs from stitch count, materials, and shop time — in under 60 seconds.",
+  domain: "stitchquote.toolaix.com",
   locale: "en-US",
-  /** 工具类型：calculator | converter | quoter */
   kind: "calculator" as const,
   monetization: {
-    /** ads | freemium | one_time | lead */
     model: "freemium" as const,
-    /** Creem product / checkout URL，上线前填 */
     creemCheckoutUrl: "",
-    freeQuotaLabel: "3 free runs / day",
-    premiumPriceLabel: "$9.99 / mo",
+    freeQuotaLabel: "Unlimited free estimates",
+    premiumPriceLabel: "$9.99 / mo — save your shop costs",
   },
   seo: {
-    titleTemplate: "%s | Tool Starter",
+    titleTemplate: "%s | StitchQuote",
     description:
-      "Free example fee calculator. See costs and margins before you list.",
-    /** 首批长尾，各自可扩成 /guides/[slug] */
+      "Free embroidery and DTF pricing calculator. Estimate materials, labor, overhead, and what to charge before you quote the customer.",
     longTails: [
-      "example fee calculator free",
-      "example fees explained",
-      "how to calculate example profit",
+      "DTF pricing calculator",
+      "how to price embroidery jobs",
+      "embroidery cost per thousand stitches",
+      "screen printing vs embroidery pricing",
+      "embroidery shop overhead calculator",
     ],
   },
   analytics: {
-    /** 可选：Cloudflare Web Analytics token；大陆侧少依赖 GA */
     cloudflareBeaconToken: "",
   },
   gsc: {
-    /** 上线后粘贴 GSC meta 验证码 */
     verificationMeta: "",
   },
 } as const;

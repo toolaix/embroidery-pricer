@@ -2,16 +2,20 @@ import { site } from "@/site.config";
 
 const items = [
   {
-    q: `What is a ${site.primaryKeyword}?`,
-    a: "A free tool that estimates costs and suggested prices for one job or listing.",
+    q: "What is an embroidery pricing calculator?",
+    a: "A tool that turns stitch count, blanks, labor, and shop overhead into a suggested price per piece so you stop guessing on quotes.",
   },
   {
-    q: "Is it free?",
-    a: `${site.monetization.freeQuotaLabel}. Premium unlocks saved shop numbers.`,
+    q: "Does it support DTF as well?",
+    a: "Yes. Switch to DTF to price film, press time, blanks, and margin the same way.",
   },
   {
-    q: "Are the numbers guaranteed?",
-    a: "No. Results are estimates. Replace defaults with your real costs.",
+    q: "Is StitchQuote free?",
+    a: `${site.monetization.freeQuotaLabel}. Premium (${site.monetization.premiumPriceLabel}) remembers your real shop costs.`,
+  },
+  {
+    q: "Are these numbers guaranteed profit?",
+    a: "No. Results are estimates. Costs vary by machine, speed, waste, and local wages — edit the inputs to match your shop.",
   },
 ];
 
