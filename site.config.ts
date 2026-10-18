@@ -5,7 +5,7 @@ export const site = {
   name: "StitchQuote",
   primaryKeyword: "embroidery pricing calculator",
   tagline: "Price embroidery and DTF jobs from stitch count, materials, and shop time — in under 60 seconds.",
-  domain: "stitchquote.toolaix.com",
+  domain: "embroidery-pricer.pages.dev",
   locale: "en-US",
   kind: "calculator" as const,
   monetization: {
